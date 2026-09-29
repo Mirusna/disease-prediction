@@ -6,7 +6,7 @@ and saves the trained model to disk so app.py can use it later.
 
 Run this once with: python train_model.py
 """
-
+   
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -14,7 +14,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import joblib
 
 # 1. Load data
-data = pd.read_csv("data/symptoms_disease.csv")
+   data = pd.read_csv("symptoms_disease.csv")
 print("Data shape:", data.shape)
 print(data['disease'].value_counts())
 
